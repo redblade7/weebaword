@@ -4,23 +4,31 @@
 
 Weeb a Word, created by redneonglow, is a Fediverse phrase bot which generates random otaku culture inspired phrases using an external dictionary file. It is inspired by the popular Loli a Word and Free Word Extremist bots.
 
-Example phrases using the default dictionary from miscfiles in Gentoo Linux:
+Example phrases using the default dictionary from bsd-games-2.17 in Slackware Linux:
+
+* negatively oppai
+* shota pharmacopoeia
+* loli reconstructing
+* futa objection
+* subbed trip
+* harasses shota
+* hentai cataloged
+* joys pantsu
+* dubbed believable
+* protecc clarified
+
+Example phrases using the default dictionary from miscfiles-1.5-r3 in Gentoo Linux:
 
 * weeaboo coinhabitant
-* shota cromlech
 * sidewalk cosplay
-* aero chippai
 * otaku unfermenting
 * anime trickishly
 * loli pseudococcus
 * protecc laborsaving
 * weeb disinterment
-* coriin fuku
-* hemocyte mecha
 * manga folkloristic
 * apocinchonine bishoujo
 * shoujo septotomy
-* convention hemipinnate
 
 By default, /usr/share/dict/words is used for the dictionary file, but this can be changed with the -d option.
 
