@@ -36,7 +36,7 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
 #program version
-progver = "1-dev (20200407)"
+progver = "1-dev (20200408)"
 
 #modifiers
 modifier = ["anime","attacc","bishoujo","chippai","convention","cosplay","doujinshi","dubbed","fandub","fansub","fuku","futa","hentai","idol","isekai","loli","magical girl","manga","mecha","moe","neko","oppai","otaku","pantsu","protecc","seinen","shonen","shota","shoujo","subbed","thicc","trap","weeaboo","weeb"]
