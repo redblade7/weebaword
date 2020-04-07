@@ -43,7 +43,8 @@ modifier = ["anime","attacc","bishoujo","chippai","convention","cosplay","doujin
 
 #returns generated phrase
 #filename = path/filename to dictionary file
-def genphrase(filename):
+#loli = boolean, true if loliaword mode is enabled
+def genphrase(filename,loli):
 
    try:
         with open(filename,'r') as dictfile:
@@ -52,12 +53,16 @@ def genphrase(filename):
         print("ERROR:",err,file=sys.stderr)
         sys.exit(1)
 
-   coin = secrets.randbelow(2)
-
-   if coin:
-        return str(secrets.choice(modifier) + ' ' + secrets.choice(dictionary)).replace("'s","").lower()
+   if loli:
+        return str(secrets.choice(dictionary) + " loli").replace("'s","").lower()
    else:
-        return str(secrets.choice(dictionary) + ' ' + secrets.choice(modifier)).replace("'s","").lower()
+
+        coin = secrets.randbelow(2)
+
+        if coin:
+            return str(secrets.choice(modifier) + ' ' + secrets.choice(dictionary)).replace("'s","").lower()
+        else:
+            return str(secrets.choice(dictionary) + ' ' + secrets.choice(modifier)).replace("'s","").lower()
 
 #returns the main version line as a string
 #used in version and license commands
@@ -97,11 +102,12 @@ def optlicense():
 #post phrase to fediverse
 #vis: Mastodon.py visibility setting (string)
 #dictname: path/filename to dictionary file
-def optpostphrase(baseurl,token,vis,dictname):
+#loli = boolean, true if loliaword mode is enabled
+def optpostphrase(baseurl,token,vis,dictname,loli):
 
     try:
         mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
-        mastodon.status_post(genphrase(str(dictname)),visibility=str(vis))
+        mastodon.status_post(genphrase(str(dictname),loli),visibility=str(vis))
     except ValueError as err:
         print("ERROR:",err,'\n')
         sys.exit(2)
@@ -112,8 +118,10 @@ def optpostphrase(baseurl,token,vis,dictname):
     print("Successfully posted phrase to " + str(baseurl) + '!')
 
 #prints phrase
-def optprintphrase(filename):
-    print(genphrase(filename))
+#filename: path/filename to dictionary file
+#loli = boolean, true if loliaword mode is enabled
+def optprintphrase(filename,loli):
+    print(genphrase(filename,loli))
 
 #post version info to fediverse (unlisted)
 def optpostver(baseurl,token):
@@ -139,6 +147,8 @@ def main():
     group.add_argument("-o","--postphrase",help="Post phrase once to Fediverse site SERVER using token file TOKEN and visibility value VISIBILITY.",type=str,nargs=3,metavar=("SERVER","TOKEN","VISIBILITY"))
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-d","--dictionary",help="Use specified dictionary file (/usr/share/dict/words used if argument omitted)",type=str,nargs=1,metavar=("FILE"))
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("-l","--loli",help="Enable Loli a Word emulation mode",action="store_true")
 
     if len(sys.argv) == 1:
         parser.print_help()
@@ -166,16 +176,16 @@ def main():
             else:
                 for count in range(0,times):
                     if args.dictionary:
-                        optprintphrase(args.dictionary[0])
+                        optprintphrase(args.dictionary[0],args.loli)
                     else:
-                        optprintphrase("/usr/share/dict/words")
+                        optprintphrase("/usr/share/dict/words",args.loli)
         elif args.postversion:
             optpostver(args.postversion[0],args.postversion[1])
         elif args.postphrase:
             if args.dictionary:
-                optpostphrase(args.postphrase[0],args.postphrase[1],args.postphrase[2],args.dictionary[0])
+                optpostphrase(args.postphrase[0],args.postphrase[1],args.postphrase[2],args.dictionary[0],args.loli)
             else:
-                optpostphrase(args.postphrase[0],args.postphrase[1],args.postphrase[2],"/usr/share/dict/words")
+                optpostphrase(args.postphrase[0],args.postphrase[1],args.postphrase[2],"/usr/share/dict/words",args.loli)
         else:
             print("ERROR: Invalid command!\n")
             parser.print_help()
