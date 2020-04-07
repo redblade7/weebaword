@@ -85,7 +85,7 @@ Show version: `./weebaword.py -v`
 
 Print 1 phrase to stdout: `./weebaword.py -p 1`
 
-Print 4 phrases to stdout, with Loli a Word emulation mode enabled, and using custom dictionary file /usr/share/dict/cracklib-small: `./weebaword.py -p 4 -d /usr/share/dict/cracklib-small`-l
+Print 4 phrases to stdout, with Loli a Word emulation mode enabled, and using custom dictionary file /usr/share/dict/cracklib-small: `./weebaword.py -p 4 -d /usr/share/dict/cracklib-small -l`
 
 Post to an account on Pleroma instance Neckbeard using token file tokenfile.json and public visibility:
 
