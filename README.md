@@ -38,7 +38,7 @@ WARNING: Weeb a Word may generate phrases which are only suitable for "free spee
 
 **REQUIREMENTS:**
 
-* Python 3
+* Python 3.6
 * Mastodon.py and its dependencies
 * curl
 
