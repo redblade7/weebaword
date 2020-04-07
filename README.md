@@ -1,6 +1,6 @@
 # weebaword
 
-**Weeb a Word v1-dev (20200406)**
+**Weeb a Word v1-dev (20200407)**
 
 Weeb a Word, created by redneonglow, is a Fediverse phrase bot which generates random otaku culture inspired phrases using an external dictionary file. It is inspired by the popular Loli a Word and Free Word Extremist bots.
 
