@@ -2,7 +2,7 @@
 
 **Weeb a Word v1-dev (20200408)**
 
-Weeb a Word, created by redneonglow, is a Fediverse phrase bot which generates random otaku culture inspired phrases using an external dictionary file. It is inspired by the popular Loli a Word and Free Word Extremist bots.
+Weeb a Word, created by redneonglow, is a Fediverse phrase bot which generates random otaku culture inspired phrases using an external dictionary file. It is inspired by the popular Loli a Word and Free Word Extremist bots, and has a mode to emulate Loli a Word.
 
 Example phrases using the default dictionary from bsd-games-2.17 in Slackware Linux:
 
@@ -16,6 +16,19 @@ Example phrases using the default dictionary from bsd-games-2.17 in Slackware Li
 * joys pantsu
 * dubbed believable
 * protecc clarified
+
+Example phrases using the Slackware settings above, but with Loli a Word emulation mode enabled:
+
+* awaken loli
+* vagary loli
+* intermingled loli
+* apportion loli
+* throttle loli
+* cookies loli
+* quit loli
+* deception loli
+* enders loli
+* hazes lol
 
 Example phrases using the default dictionary from miscfiles-1.5-r3 in Gentoo Linux:
 
@@ -72,7 +85,7 @@ Show version: `./weebaword.py -v`
 
 Print 1 phrase to stdout: `./weebaword.py -p 1`
 
-Print 4 phrases to stdout using custom dictionary file /usr/share/dict/cracklib-small: `./weebaword.py -p 4 -d /usr/share/dict/cracklib-small`
+Print 4 phrases to stdout, with Loli a Word emulation mode enabled, and using custom dictionary file /usr/share/dict/cracklib-small: `./weebaword.py -p 4 -d /usr/share/dict/cracklib-small`-l
 
 Post to an account on Pleroma instance Neckbeard using token file tokenfile.json and public visibility:
 
