@@ -43,7 +43,7 @@ Example phrases using the default dictionary from miscfiles-1.5-r3 in Gentoo Lin
 * apocinchonine bishoujo
 * shoujo septotomy
 
-By default, /usr/share/dict/words is used for the dictionary file, but this can be changed with the -d option. Weeb a Word randomly chooses a word from the dictionary file, removes `'s` from the word if present, and converts the word to lower case.
+By default, /usr/share/dict/words is used for the dictionary file, but this can be changed with the -d option. Weeb a Word randomly chooses a word from the dictionary file and converts the word to lower case prior to output/posting.
 
 Weeb a Word can post directly to Mastodon and Pleroma instances and is great for use in an hourly cronjob.
 

@@ -54,15 +54,15 @@ def genphrase(filename,loli):
         sys.exit(1)
 
    if loli:
-        return str(secrets.choice(dictionary) + " loli").replace("'s","").lower()
+        return str(secrets.choice(dictionary) + " loli").lower()
    else:
 
         coin = secrets.randbelow(2)
 
         if coin:
-            return str(secrets.choice(modifier) + ' ' + secrets.choice(dictionary)).replace("'s","").lower()
+            return str(secrets.choice(modifier) + ' ' + secrets.choice(dictionary)).lower()
         else:
-            return str(secrets.choice(dictionary) + ' ' + secrets.choice(modifier)).replace("'s","").lower()
+            return str(secrets.choice(dictionary) + ' ' + secrets.choice(modifier)).lower()
 
 #returns the main version line as a string
 #used in version and license commands
