@@ -1,6 +1,8 @@
 v1-dev (20200409)
 
 * Added modifiers waifu, husbando, harem
+* Removed the stripping of `'s` from words
+* Updated documentation to state that words are converted to lower case
 
 v1-dev (20200408)
 
