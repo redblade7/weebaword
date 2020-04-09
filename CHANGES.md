@@ -1,3 +1,8 @@
+v1-dev (20200410)
+
+* Added sample public domain wordlist
+* Updated documentation about wordlists
+
 v1-dev (20200409)
 
 * Added modifiers waifu, husbando, harem
