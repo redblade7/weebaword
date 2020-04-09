@@ -1,6 +1,7 @@
 v1-dev (20200410)
 
 * Added sample public domain wordlist
+* Added modifier fanservice
 * Updated documentation about wordlists
 
 v1-dev (20200409)
