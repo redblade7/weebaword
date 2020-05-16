@@ -28,7 +28,7 @@ Example phrases using the Slackware settings above, but with Loli a Word emulati
 * quit loli
 * deception loli
 * enders loli
-* hazes lol
+* hazes loli
 
 Example phrases using the default dictionary from miscfiles-1.5-r3 in Gentoo Linux:
 
