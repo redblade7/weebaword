@@ -39,7 +39,7 @@ import argparse,json,secrets,sys
 progver = "1-dev (20200410)"
 
 #modifiers
-modifier = ["anime","attacc","bishoujo","chippai","convention","cosplay","doujinshi","dubbed","fandub","fanservice","fansub","fuku","futa","harem","hentai","husbando","idol","isekai","loli","magical girl","manga","mecha","moe","neko","oppai","otaku","pantsu","protecc","seinen","shonen","shota","shoujo","subbed","thicc","trap","waifu","weeaboo","weeb"]
+modifier = ["anime","attacc","bishoujo","chippai","convention","cosplay","doujinshi","dubbed","ecchi","fandub","fanservice","fansub","fuku","futa","harem","hentai","husbando","idol","isekai","loli","magical girl","manga","mecha","moe","neko","oppai","otaku","pantsu","protecc","seinen","shonen","shota","shoujo","subbed","thicc","trap","waifu","weeaboo","weeb","yaoi","yuri"]
 
 #returns generated phrase
 #filename = path/filename to dictionary file
