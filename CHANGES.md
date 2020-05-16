@@ -1,3 +1,8 @@
+v1-dev (20200517)
+
+* Added modifiers yaoi, yuri, ecchi
+* Fixed typo in README.md
+
 v1-dev (20200410)
 
 * Added sample public domain wordlist
