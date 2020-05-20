@@ -1,3 +1,7 @@
+v1-dev (20200521)
+
+* Updated documentation to be more specific about required Python version
+
 v1-dev (20200517)
 
 * Added modifiers yaoi, yuri, ecchi
