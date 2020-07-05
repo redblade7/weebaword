@@ -1,3 +1,7 @@
+v1-dev (20200706)
+
+* Added modifiers eroge and visual novel
+
 v1-dev (20200521)
 
 * Updated documentation to be more specific about required Python version
