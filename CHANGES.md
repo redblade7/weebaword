@@ -1,3 +1,7 @@
+v1-dev (20201028)
+
+* Version commands now note when running in Loli a Word emulation mode.
+
 v1-dev (20200706)
 
 * Added modifiers eroge and visual novel
