@@ -185,7 +185,7 @@ def main():
                     else:
                         optprintphrase("/usr/share/dict/words",args.loli)
         elif args.postversion:
-            optpostver(args.postversion[0],args.postversion[1])
+            optpostver(args.postversion[0],args.postversion[1],args.loli)
         elif args.postphrase:
             if args.dictionary:
                 optpostphrase(args.postphrase[0],args.postphrase[1],args.postphrase[2],args.dictionary[0],args.loli)
