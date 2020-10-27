@@ -70,8 +70,12 @@ def verline():
     return str("Weeb a Word v" + progver)
 
 #return part two of version info as string
-def verpart2():
-    return str("A Fediverse phrase bot by redneonglow.\nMore info: https://github.com/redblade7/weebaword")
+#loli = boolean, true if loliaword mode is enabled
+def verpart2(loli):
+    returnval = "A Fediverse phrase bot by redneonglow.\nMore info: https://github.com/redblade7/weebaword"
+    if loli:
+        returnval += "\nRunning in Loli a Word emulation mode."
+    return str(returnval)
 
 #open json access token
 def readtoken(token):
@@ -85,9 +89,10 @@ def readtoken(token):
     return json_obj["access_token"]
 
 #shows version info
-def optversion():
+#loli = boolean, true if loliaword mode is enabled
+def optversion(loli):
     print(verline())
-    print(verpart2())
+    print(verpart2(loli))
 
 #shows license info
 def optlicense():
@@ -124,11 +129,11 @@ def optprintphrase(filename,loli):
     print(genphrase(filename,loli))
 
 #post version info to fediverse (unlisted)
-def optpostver(baseurl,token):
+def optpostver(baseurl,token,loli):
 
     try:
         mastodon = Mastodon(api_base_url=str(baseurl),access_token=readtoken(str(token)))
-        mastodon.status_post(verline()+'\n'+verpart2(),visibility="unlisted")
+        mastodon.status_post(verline()+'\n'+verpart2(loli),visibility="unlisted")
     except MastodonError as err:
         print("ERROR:",err,'\n')
         sys.exit(1)
@@ -159,7 +164,7 @@ def main():
         if args.license:
             optlicense()
         elif args.version:
-            optversion()
+            optversion(args.loli)
         elif args.printphrase:
 
             try:
