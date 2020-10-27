@@ -105,6 +105,10 @@ Enjoy!
 * `@redneonglow@anime.website` / https://anime.website/redneonglow (backup)
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 
-The author runs an instance of Weeb a Word here, generating phrases every half hour:
+The author runs an instance of Weeb a Word, generating phrases every half hour, here:
 
 * `@weebaword@neckbeard.xyz` / https://neckbeard.xyz/weebaword
+
+The author runs an instance of Weeb a Word, running in Loli a Word emulation mode, generating phrases every half hour, here:
+
+* `@loliaword@neckbeard.xyz` / https://neckbeard.xyz/loliaword
