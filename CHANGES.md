@@ -1,3 +1,7 @@
+v1 stable (20210112)
+
+* Initial stable release
+
 v1-dev (20201028)
 
 * Version commands now note when running in Loli a Word emulation mode.
