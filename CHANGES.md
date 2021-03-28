@@ -1,3 +1,7 @@
+v1.1 stable (20210328)
+
+* Update copyright dates to 2021
+
 v1 stable (20210112)
 
 * Initial stable release
