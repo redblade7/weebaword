@@ -91,9 +91,9 @@ Print 1 phrase to stdout: `./weebaword.py -p 1`
 
 Print 4 phrases to stdout, with Loli a Word emulation mode enabled, and using custom dictionary file /usr/share/dict/cracklib-small: `./weebaword.py -p 4 -d /usr/share/dict/cracklib-small -l`
 
-Post to an account on Pleroma instance Neckbeard using token file tokenfile.json and public visibility:
+Post to an account on Pleroma instance bae.st using token file tokenfile.json and public visibility:
 
-`./weebaword.py -o https://neckbeard.xyz tokenfile.json public`
+`./weebaword.py -o https://bae.st tokenfile.json public`
 
 Enjoy!
 
@@ -101,14 +101,14 @@ Enjoy!
 
 **FEDIVERSE CONTACT INFO:**
 
-* `@redneonglow@neckbeard.xyz` / https://neckbeard.xyz/redneonglow (main)
+* `@redneonglow@bae.st` / https://bae.st/redneonglow (main)
 * `@redneonglow@anime.website` / https://anime.website/redneonglow (backup)
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 
 The author runs an instance of Weeb a Word, generating phrases every half hour, here:
 
-* `@weebaword@neckbeard.xyz` / https://neckbeard.xyz/weebaword
+* `@weebaword@bae.st` / https://bae.st/weebaword
 
 The author runs an instance of Weeb a Word, running in Loli a Word emulation mode, generating phrases every half hour, here:
 
-* `@loliaword@neckbeard.xyz` / https://neckbeard.xyz/loliaword
+* `@loliaword@bae.st` / https://bae.st/loliaword
