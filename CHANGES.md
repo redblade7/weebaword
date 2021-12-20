@@ -1,3 +1,19 @@
+v1.23 stable (20211220)
+
+* Update changelog file
+
+v1.22 stable (20211218)
+
+* Fix contact information
+
+v1.21 stable (20211218)
+
+* Fix contact information
+
+v1.2 stable (20211218)
+
+* Replaced neckbeard.xyz with bae.st
+
 v1.1 stable (20210328)
 
 * Update copyright dates to 2021 (forgot to update in v1)
