@@ -1,3 +1,7 @@
+v1.24 stable (20220604)
+
+* Update changelog, copyright, and contact information
+
 v1.23 stable (20211220)
 
 * Update changelog file
