@@ -1,6 +1,6 @@
 # weebaword
 
-**Weeb a Word v1.23 stable (20211220)**
+**Weeb a Word v1.24 stable (20220604)**
 
 Weeb a Word, created by redneonglow, is a Fediverse phrase bot which generates random otaku culture inspired phrases using an external dictionary file. It is inspired by the popular Loli a Word and Free Word Extremist bots, and has a mode to emulate Loli a Word.
 
@@ -47,7 +47,7 @@ By default, /usr/share/dict/words is used for the dictionary file, but this can 
 
 /usr/share/dict/words is usually provided by the "miscfiles" package in most Linux distributions. A sample public domain wordlist (WORD.LST) has also been included with this software. For best results, it is recommended to use the word list included with Slackware Linux's bsd-games package. You can download it here (remember to gunzip):
 
-`http://ftp.slackware.com/pub/slackware/slackware64-14.2/source/y/bsd-games/hangman-words.gz`
+`http://ftp.slackware.com/pub/slackware/slackware64-15.0/source/y/bsd-games/hangman-words.gz`
 
 Weeb a Word can post directly to Mastodon and Pleroma instances and is great for use in an hourly cronjob.
 
@@ -104,6 +104,7 @@ Enjoy!
 * `@redneonglow@bae.st` / https://bae.st/redneonglow (main)
 * `@redneonglow@weeaboo.space` / https://weeaboo.space/redneonglow (backup)
 * `@redneonglow@gameliberty.club` / https://gameliberty.club/@redneonglow (backup)
+* `@redneonglow@poa.st` / https://poa.st/@redneonglow (backup)
 
 The author runs an instance of Weeb a Word, generating phrases every half hour, here:
 
