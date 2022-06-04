@@ -1,6 +1,11 @@
+v1.25 stable (20220604)
+
+* Update contact info
+
 v1.24 stable (20220604)
 
 * Update changelog, copyright, and contact information
+* Update Slackware version in documentation
 
 v1.23 stable (20211220)
 
