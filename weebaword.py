@@ -4,7 +4,7 @@
 #
 # A Fediverse phrase bot generating random otaku culture inspired phrases.
 #
-# Copyright (c) 2020-21, redneonglow
+# Copyright (c) 2020-22, redneonglow
 # All rights reserved.
 #
 # Includes code from Dark Web Mystery Bot v4 stable (20200403)
@@ -36,7 +36,7 @@ from mastodon import Mastodon,MastodonError
 import argparse,json,secrets,sys
 
 #program version
-progver = "1.23 stable (20211220)"
+progver = "1.24 stable (20220604)"
 
 #modifiers
 modifier = ["anime","attacc","bishoujo","chippai","convention","cosplay","doujinshi","dubbed","ecchi","eroge","fandub","fanservice","fansub","fuku","futa","harem","hentai","husbando","idol","isekai","loli","magical girl","manga","mecha","moe","neko","oppai","otaku","pantsu","protecc","seinen","shonen","shota","shoujo","subbed","thicc","trap","visual novel","waifu","weeaboo","weeb","yaoi","yuri"]
@@ -97,7 +97,7 @@ def optversion(loli):
 #shows license info
 def optlicense():
     print(verline())
-    print("\nCopyright (c) 2020-21, redneonglow\nAll rights reserved.\n")
+    print("\nCopyright (c) 2020-22, redneonglow\nAll rights reserved.\n")
     print("Includes code from Dark Web Mystery Bot v4-stable (20200403)\nCopyright (c) 2019-20, redneonglow\nAll rights reserved.\n")
     print("Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n")
     print("1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.")
